@@ -45,6 +45,6 @@ while(ExitCondition == False):
     print("is this correct?")
 
     yesOrNo = input("enter a 0 for 'no' and anything else for 'yes': ")
-    if(yn != 0):
+    if(yesOrNo != 0):
         ExitCondition = True
 
