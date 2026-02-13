@@ -10,3 +10,6 @@ the list of weights.
 
 The calculation is done by adding all grades into their categories, and tehn averaging the scores from those categories, multiplying by the respective weights, and then adding all of 
 those results together. 
+
+
+NOTE: It shows Tye being involved in all commits. This was due to issues on Al-Ameen's machine that didn't allow him direct access. Things that he did, he is marked as a co-author.
