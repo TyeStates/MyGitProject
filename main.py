@@ -44,7 +44,21 @@ while(ExitCondition == False):
             print(f"{markTypes[i]} weight = {weights[i]}%")
     print("is this correct?")
 
-    yesOrNo = input("enter a 0 for 'no' and anything else for 'yes': ")
+    yesOrNo = input("enter a 0 for 'no' and anything else for 'yes': ")  
     if(yesOrNo != 0):
         ExitCondition = True
+ExitCondition = False
 
+grades = []
+for i in range(len(weights)):
+    if weights[i] > 0:
+        count = int(input(f"enter the amount of {markTypes[i]}s you have"))
+        for j in range(1, count+1):
+            score = float(input(f"enter the grade you got on {markTypes[i]}{j}"))
+            #insert object definition here
+            #put into grades list
+
+finalGrade = CalcFinalGrade(grades, weights)
+print(f"your final grade as of now would be {finalGrade}")
+
+            
