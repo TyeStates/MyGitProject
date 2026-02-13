@@ -1,5 +1,4 @@
-#fill in with classes file
-#import 
+import gradespy
 
 def enterWeights():
     #Takes user input to decide the percentage weights for each possible mark
@@ -55,10 +54,9 @@ for i in range(len(weights)):
         count = int(input(f"enter the amount of {markTypes[i]}s you have"))
         for j in range(1, count+1):
             score = float(input(f"enter the grade you got on {markTypes[i]}{j}"))
-            #insert object definition here
-            #put into grades list
+            grades.append(grade(markTypes[i], score, weights[i]))
 
-finalGrade = CalcFinalGrade(grades, weights)
+finalGrade = calc_final_grade(grades, weights)
 print(f"your final grade as of now would be {finalGrade}")
 
             
