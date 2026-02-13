@@ -51,12 +51,12 @@ ExitCondition = False
 grades = []
 for i in range(len(weights)):
     if weights[i] > 0:
-        count = int(input(f"enter the amount of {markTypes[i]}s you have"))
+        count = int(input(f"enter the amount of {markTypes[i]}s you have: "))
         for j in range(1, count+1):
-            score = float(input(f"enter the grade you got on {markTypes[i]}{j}"))
-            grades.append(grade(markTypes[i], score, weights[i]))
+            score = float(input(f"enter the grade you got on {markTypes[i]}{j}: "))
+            grades.append(gradespy.Grade(markTypes[i], score, weights[i]))
 
-finalGrade = calc_final_grade(grades, weights)
+finalGrade = gradespy.calc_final_grade(grades, weights)
 print(f"your final grade as of now would be {finalGrade}")
 
             
