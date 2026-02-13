@@ -6,4 +6,7 @@ accurate. The only way to say "No" is to type 0. Any other value is equivalent t
 
 It then iterates through the non-zero weights and takes a user input of how many instances of each item type have been completed. Immediately after the input of the amount of the type of mark,
 the system will take the actual grade from the user as a floating point value. This, along with the type are put into a list of objects, which is then used to calculate the final grade alongside 
-the list of weights..
+the list of weights.
+
+The calculation is done by adding all grades into their categories, and tehn averaging the scores from those categories, multiplying by the respective weights, and then adding all of 
+those results together. 
